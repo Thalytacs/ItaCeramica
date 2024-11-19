@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="Estilo2.css">
+  <script src="Script.js" async></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html#Inicio" style="color: maroon;" class="w3-bar-item w3-button w3-wide "><b>Ita Cerâmica</b></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="index.html#Sobre" style="color: maroon;" class="w3-bar-item w3-button">Sobre</a>
+            <a href="index.html#Telhas" style="color: maroon;" class="w3-bar-item w3-button"> Telhas</a>
+            <a href="index.html#Blocos" style="color: maroon;" class="w3-bar-item w3-button"> Blocos</a>
+            <a href="index.html#Pisos" style="color: maroon;" class="w3-bar-item w3-button"> Pisos</a>
+            <a href="#Perfil" style="color: maroon;" class="w3-bar-item w3-button"><i class="fa fa-user"></i>
+                Perfil</a>
+        </div>
+        
+
+        <a href="javascript:void(0)" style="color: maroon;"
+            class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+style="display:none" id="mySidebar">
+<a href="javascript:void(0)" onclick="w3_close()" style="color: maroon;"
+    class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+<a href="index.html#Sobre" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Sobre</a>
+<a href="index.html#Telhas" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Telhas</a>
+<a href="index.html#Blocos" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Blocos</a>
+<a href="index.html#Pisos" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Pisos</a>
+<a href="#Perfil" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Perfil</a>
+</nav>
+<br><br><div><center><h3>Formulário</h3></div></center>
+  <div class="w3-container" style="margin-top:48px">
+    <form action="https://formspree.io/f/mdovqbey" method="post" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Comentários extras" name="Extra">
+        </p>
+        <p> Avalie a qualidade do site* </p>
+      <input type="radio" id="avaliacao" name="Avalição" value="Ótima" required>
+      <label for="Ótimo"> Ótima </label><br>
+      <input type="radio" id="avaliacao" name="Avalição" value="Boa">
+      <label for="Bom"> Boa </label><br>
+      <input type="radio" id="avaliacao" name="Avalição" value="Mediana">
+      <label for="Mediano"> Mediana </label><br>
+      <input type="radio" id="avaliacao" name="Avalição" value="Ruim">
+      <label for="Ruim"> Ruim </label><br>
+      <input type="radio" id="avaliacao" name="Avalição" value="Péssima">
+      <label for="Péssimo"> Péssima </label><br>
+        <p>
+            <button class="w3-button w3-black" type="submit">
+                <i class="fa fa-paper-plane"></i> ENVIAR
+            </button>
+        </p>
+    </form>
+  </div>
+    <footer>2023 - Copyright &copy;ITA CERAMICA LTDA - Todos os
+        Direitos
+        Reservados | CNPJ: 00.000.000/0000-00 <br>
+        Av. Vereador Olímpio Grande, s/n, Porto, Itabaiana/SE, CEP 49500-000 <br> Contato:
+        thalytacosta2018@gmail.com
+      </footer>
+</body>
+</html>

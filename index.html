@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Ita Cerâmica - Materias de Construção em Cerâmica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Estilo2.css">
+    <script src="Script.js" async></script>
+    <link rel="icon" type="image/x-icon" href="Imagens/Icone.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="index.html" style="color: maroon;" class="w3-bar-item w3-button w3-wide "><b>Ita Cerâmica</b></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#Sobre" style="color: maroon;" class="w3-bar-item w3-button">Sobre</a>
+                <a href="#Telhas" style="color: maroon;" class="w3-bar-item w3-button"> Telhas</a>
+                <a href="#Blocos" style="color: maroon;" class="w3-bar-item w3-button"> Blocos</a>
+                <a href="#Pisos" style="color: maroon;" class="w3-bar-item w3-button"> Pisos</a>
+                <a href="#Perfil" style="color: maroon;" class="w3-bar-item w3-button"><i class="fa fa-user"></i>
+                    Perfil</a>
+            </div>
+
+            <a href="javascript:void(0)" style="color: maroon;"
+                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" style="color: maroon;"
+            class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+        <a href="#Sobre" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Sobre</a>
+        <a href="#Telhas" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Telhas</a>
+        <a href="#Blocos" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Blocos</a>
+        <a href="#Pisos" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Pisos</a>
+        <a href="#Perfil" onclick="w3_close()" style="color: maroon;" class="w3-bar-item w3-button">Perfil</a>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imagens/Casa2.jpg" >
+          </div>
+          <div class="carousel-item">
+            <img src="Imagens/Casa3.jpg" >
+          </div>
+          <div class="carousel-item">
+            <img src="Imagens/Casa4.webp" >
+            
+          </div>
+        </div>
+        
+    
+      </div>
+
+    <!-- Header with full-height image -->
+    <header class=" w3-display-container" id="Inicio">
+        <div class="w3-display-left w3-text-white" style="padding:48px; margin: -280px 35px; height: 0px; position: absolute;">
+            <span style="color: maroon;" class="w3-jumbo w3-hide-small">Ita Cerâmica</span><br>
+            <span style="color: maroon;" class="w3-xxlarge w3-hide-large w3-hide-medium">Ita Cerâmica</span><br>
+            <span style="color: maroon;" class="w3-large">Aqui você encontra produtos do teto ao piso para a sua
+                casa!</span>
+            <p><a href="#Telhas" style="background-color: maroon;"><button>Nossos Produtos </button></a></p>
+        </div>
+
+    </header>
+
+    <!--Botão de voltar ao topo-->
+    <div class="fixed">
+        <button style="color: maroon;" class="w3-button  w3-round-xxlarge"><a href="index.html"><i
+                    class="material-icons fa-2x">expand_less</i></a></button>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:50px 16px" id="Sobre">
+        <h3 class="w3-center">Sobre nossa empresa</h3>
+        <p class="w3-center w3-large">A Ita Cerâmica disponibiliza uma diversividade em produtos que você precisa para a
+            reforma/construção da sua casa.<br>
+        </p>
+        <div class="w3-row-padding w3-center" style="margin-top:20px">
+            <div class="w3-third">
+                <img type="image/x-icon" src="Imagens/Icone teto.png"></img>
+                <br><br>
+                <p class="w3-large">Telhas</p>
+                <p>Estando disponivel 2 tipos.</p>
+            </div>
+            <div class="w3-third">
+                <i class=" fa fa-th w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Blocos</p>
+                <p>Contendo 3 tipos.</p>
+            </div>
+            <div class="w3-third">
+                <img type="image/x-icon" src="Imagens/Icone piso.png"></img>
+                <p class="w3-large">Pisos</p>
+                <p>Em diversas opcões.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Telhas -->
+    <div id="Telhas">
+        <div class="w3-container" style="padding:50px 16px ">
+            <h3 class="w3-center">Telhas</h3>
+            <div class="w3-row-padding " style="margin-top:64px">
+                <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                    <div class="w3-card ">
+                        <img src="Imagens/TelhaClassica1-6.png" alt="Telha Clássica">
+                        <div class="w3-container">
+                            <h4 style="color: maroon;">Clássica</h4>
+                            <p class="w3-opacity">Valor: R$2,00</p>
+                            <a href="TelhaClassica.html">
+                                <p><button><i class="fa fa-info"></i> Ver
+                                        mais</button></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                    <div class="w3-card ">
+                        <img src="Imagens/TelhaEsmaltada1.webp" alt="Telha Esmaltada">
+                        <div class="w3-container">
+                            <h4 style="color: maroon;">Esmaltada</h4>
+                            <p class="w3-opacity">Valor: R$4,00</p>
+                            <a href="TelhaEsmaltada.html">
+                                <p><button><i class="fa fa-info"></i> Ver
+                                        mais</button></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Blocos-->
+
+    <div id="Blocos" class="w3-container" style="padding:50px 16px">
+        <h3 class="w3-center">Blocos</h3>
+        <div class="w3-center w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/Bloco6-1.webp" alt="Bloco com 6 furos">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Bloco 11,5x14x24</h4>
+                        <p class="w3-opacity">Valor: R$1,00/un</p>
+                        <a href="Bloco6.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/Bloco8-1.webp" alt="Bloco com 8 furos" width="187px">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Bloco 11,5x19x29</h4>
+                        <p class="w3-opacity">Valor: R$2,00/un</p>
+                        <a href="Bloco8.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/Bloco9-1.webp" alt="Bloco com 9 furos" width="180px">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Bloco 14x19x29</h4>
+                        <p class="w3-opacity">Valor: R$2,50/un</p>
+                        <a href="Bloco9.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Pisos-->
+    <div id="Pisos" class="w3-container" style="padding:50px 16px">
+        <h3 class="w3-center">Pisos</h3>
+        <div class="w3-row-padding " style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/PisoCopacabana1.webp" alt="Piso Copacabana Granilha">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Copacabana Granilha</h4>
+                        <p class="w3-opacity">Valor: R$30,90/m²</p>
+                        <a href="PisoCopacabana.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/PisoTrastevereBold1.webp" alt="Piso Trastevere Bold">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Trastevere Bold</h4>
+                        <p class="w3-opacity">Valor: R$56,90/m²</p>
+                        <a href="PisoTrastevereBold.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/PisoMosaico1.webp" alt="Piso Mosaico bege Geometric">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Mosaico Geometric</h4>
+                        <p class="w3-opacity">Valor: R$31,90/m²</p>
+                        <a href="PisoMosaico.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/PisoPedraPortuguesa1.webp" alt="Piso Pedra portuguesa">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Pedra portuguesa</h4>
+                        <p class="w3-opacity">Valor: R$45,90/m²</p>
+                        <a href="PisoPedraPortuguesa.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row-padding " style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/PisoEsmaltadoKansas1.webp" alt="Piso Esmaltado Kansas">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Esmaltado Kansas</h4>
+                        <p class="w3-opacity">Valor: R$33,90/m²</p>
+                        <a href="PisoEsmaltadoKansas.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+                <div class="w3-card">
+                    <img src="Imagens/PisoMaldivas1.webp" alt="Piso Maldivas">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">Maldivas</h4>
+                        <p class="w3-opacity">Valor: R$89,90/m²</p>
+                        <a href="PisoMaldivas.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom w3-center ">
+                <div class="w3-card">
+                    <img src="Imagens/PisoHDAcetinado1.webp" alt="Piso HD Acetinado">
+                    <div class="w3-container">
+                        <h4 style="color: maroon;">HD Acetinado</h4>
+                        <p class="w3-opacity">Valor: R$69,90/m²</p>
+                        <a href="PisoHDAcetinado.html">
+                            <p><button><i class="fa fa-info"></i> Ver
+                                    mais</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <nav class="pagination w3-center">
+                <a href="javascript:void(0)" title="página anterior"><i class="material-icons">chevron_left</i></a>
+                <a class="active" href="index.html" title="página 1">1</a>
+                <a href=confirm() title="página 2">2</a>
+                <a href="javascript:void(0)" title="página 3">3</a>
+                <a href="javascript:void(0)" title="página 4">4</a>
+                <a href="javascript:void(0)" title="próxima página"><i class="material-icons">chevron_right</i></a>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <p style="text-align: center;"> Nos ajude a melhorar o site respondendo o formulário:<a
+            href="Formulario2.html">Aqui</a>
+    </p>
+
+    <!-- Footer -->
+    <hr>
+    <footer>2023 - Copyright &copy;ITA CERAMICA LTDA - Todos os Direitos
+        Reservados | CNPJ: 00.000.000/0000-00 <br>
+        Av. Vereador Olímpio Grande, s/n, Sitio Porto, Itabaiana/SE, CEP 49500-000 <br> Contato:
+        thalytacosta2018@gmail.com
+    </footer>
+    </div>
+
+</body>
+
+</html>
